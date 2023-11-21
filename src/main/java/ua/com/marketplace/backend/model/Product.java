@@ -1,42 +1,48 @@
 package ua.com.marketplace.backend.model;
 
+import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.mapping.Document;
-import ua.com.marketplace.backend.model.enums.Availability;
 
 import java.math.BigDecimal;
+import java.util.Map;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
+@Builder
 @Document(collection = "products")
 @CompoundIndex(name = "product_code", def = "{sellerId: 1, mpn: 1, gtin: 1}", unique = true)
-public abstract class Product {
+public class Product {
 
     @Id
-    protected String id;
+    private String id;
 
-    protected String name;
+    private String name;
 
-    protected String description;
+    private String description;
 
-    protected String mpn; //Manufacturer part number - product code assigned by manufacturer(seller)
+    private String mpn; //Manufacturer part number - product code assigned by manufacturer(seller)
 
-    protected String gtin; // International product code GTIN-13
+    private String gtin; // International product code GTIN-13
 
-    protected Set<String> images;
+    private Set<String> images;
 
-    protected String brand;
+    private String brand;
 
-    protected Category category;
+    private Category category;
 
-    protected BigDecimal price;
+    private Price price;
 
-    protected Availability availability;
+    private int totalAmount;
 
-    protected String sellerId;
+    private boolean isAvailable;
+
+    private Map<String, String> specificDetails;
+
+    private String sellerId;
 
 }
