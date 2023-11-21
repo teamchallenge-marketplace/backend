@@ -19,6 +19,8 @@ public class Clothes extends Product {
 
     private String material;
 
+    private String season;
+
     private String gender;
 
     private String ageGroup;
