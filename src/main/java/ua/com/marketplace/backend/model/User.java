@@ -27,9 +27,7 @@ public class User {
 
     private String password;
 
-    //orders
-
-    //sellerInfo
+    private SellerInfo sellerInfo;
 
     private Set<UserRole> userRoles;
 
