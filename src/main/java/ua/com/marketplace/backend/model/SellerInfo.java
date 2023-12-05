@@ -29,6 +29,4 @@ public class SellerInfo {
 
     private Double rating;
 
-
-    // orders requests
 }
