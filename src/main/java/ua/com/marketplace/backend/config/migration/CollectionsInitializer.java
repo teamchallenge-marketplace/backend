@@ -1,18 +1,20 @@
 package ua.com.marketplace.backend.config.migration;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.mongock.api.annotations.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import ua.com.marketplace.backend.model.OfficeContacts;
+import ua.com.marketplace.backend.model.SellerInfo;
 import ua.com.marketplace.backend.model.User;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @ChangeUnit(id = "initialization", order = "001")
 @RequiredArgsConstructor
@@ -38,12 +40,13 @@ public class CollectionsInitializer {
     @Execution
     public void insertData() throws IOException {
         insertUsers();
+        insertManufacturers();
     }
 
     @RollbackExecution
     public void rollback() {
-
     }
+
 
     private void insertUsers() throws IOException {
         JsonNode jsonNode = objectMapper.readValue(
@@ -64,4 +67,39 @@ public class CollectionsInitializer {
         mongoTemplate.insert(users, collections[0]);
     }
 
+
+    private void insertManufacturers() throws IOException {
+        JsonNode jsonNode = objectMapper.readValue(
+                new File("src/main/resources/static/manufacturers-data.json"),
+                JsonNode.class
+        );
+
+        List<SellerInfo> sellerInfoList = StreamSupport.stream(jsonNode.spliterator(), true)
+                .map(sellerJsonNode -> {
+                    try {
+                        SellerInfo sellerInfo = objectMapper.treeToValue(sellerJsonNode, SellerInfo.class);
+
+                        JsonNode contactsNode = sellerJsonNode.get("contacts");
+
+                        Set<OfficeContacts> officeContacts = StreamSupport.stream(contactsNode.spliterator(), true)
+                                .map(contactJsonNode -> {
+                                    try {
+                                        return objectMapper.treeToValue(contactJsonNode, OfficeContacts.class);
+                                    } catch (JsonProcessingException e) {
+                                        throw new RuntimeException(e);
+                                    }
+                                }).collect(Collectors.toSet());
+
+                        sellerInfo.setContacts(officeContacts);
+
+                        return sellerInfo;
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException("Error with mapping JSON to Java object", e);
+                    }
+                })
+                .collect(Collectors.toList());
+
+
+        mongoTemplate.insert(sellerInfoList, collections[5]);
+    }
 }
