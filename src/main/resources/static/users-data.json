@@ -1,71 +1,96 @@
-[{
-  "id": "657477ebfc13ae017ffa2249",
-  "firstName": "Letti",
-  "lastName": "Crouse",
-  "email": "lcrouse0@over-blog.com",
-  "password": "$2a$04$E0Gd6y6gXakUbaOAHC3oKebYg5RssXTPj05NxFgiHzKLGLAgG8mHq",
-  "sellerInfo": null,
-  "userRoles": ["USER"],
-  "dateCreated": "2023-05-10",
-  "dateUpdated": "2023-05-21"
-}, {
-  "id": "657477ebfc13ae017ffa224a",
-  "firstName": "Moshe",
-  "lastName": "Skeat",
-  "email": "mskeat1@ezinearticles.com",
-  "password": "$2a$04$K2y5PZbJJV2xnGhfPuEyMuJK8cqlJz046/CqayOePUwygF0RthwEC",
-  "sellerInfo": null,
-  "userRoles": ["USER"],
-  "dateCreated": "2023-05-24",
-  "dateUpdated": null
-}, {
-  "id": "657477ebfc13ae017ffa224b",
-  "firstName": "Joelly",
-  "lastName": "Faltin",
-  "email": "jfaltin2@boston.com",
-  "password": "$2a$04$5D3UM2qw5H00Mc9QRQGwgevmNPJ3GxlLBBlQrKz0eNM1i/7xskikK",
-  "sellerInfo": null,
-  "userRoles": ["USER"],
-  "dateCreated": "2023-04-20",
-  "dateUpdated": null
-}, {
-  "id": "657477ebfc13ae017ffa224c",
-  "firstName": "Maureene",
-  "lastName": "Biggs",
-  "email": "mbiggs3@umich.edu",
-  "password": "$2a$12$zTscG41J1b8PFMXb1wTytuinmWqO8U2iXh1PCutOK6Ul0CBRRsP9u",
-  "sellerInfo": null,
-  "userRoles": ["USER"],
-  "dateCreated": "2023-05-20",
-  "dateUpdated": null
-}, {
-  "id": "657477ebfc13ae017ffa224d",
-  "firstName": "Gaye",
-  "lastName": "Hrachovec",
-  "email": "ghrachovec4@newyorker.com",
-  "password": "$2a$12$NGd6cadYMnJnFklkkaqByeGrYc3IZ9p3EQkhF2cCliHAU0S6M8eY6",
-  "sellerInfo": null,
-  "userRoles": ["USER", "SELLER"],
-  "dateCreated": "2023-05-19",
-  "dateUpdated": null
-}, {
-  "id": "657477ebfc13ae017ffa224e",
-  "firstName": "Pierce",
-  "lastName": "Boys",
-  "email": "pboys5@t-online.de",
-  "password": "$2a$12$Pl1kxIPxElFrCgT62CO5xuxrdh0jMwF.Fj6orkS96bEtKr/neiWeS",
-  "sellerInfo": null,
-  "userRoles": ["USER", "ADMIN"],
-  "dateCreated": "2023-09-09",
-  "dateUpdated": null
-}, {
-  "id": "657477ebfc13ae017ffa224f",
-  "firstName": "Rafe",
-  "lastName": "Mutter",
-  "email": "rmutter6@tmall.com",
-  "password": "$2a$12$oSwnn6WpEFtL2kEDrDQRr.xZRsEpzZTNBmb4a6r6zoVpwpU2W6Bpm",
-  "sellerInfo": null,
-  "userRoles": ["USER", "OWNER"],
-  "dateCreated": "2023-01-16",
-  "dateUpdated": null
-}]
+[
+  {
+    "id": "657477ebfc13ae017ffa2249",
+    "firstName": "Letti",
+    "lastName": "Crouse",
+    "email": "lcrouse0@over-blog.com",
+    "password": "$2a$04$E0Gd6y6gXakUbaOAHC3oKebYg5RssXTPj05NxFgiHzKLGLAgG8mHq",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER"
+    ],
+    "dateCreated": "2023-05-10",
+    "dateUpdated": "2023-05-21"
+  },
+  {
+    "id": "657477ebfc13ae017ffa224a",
+    "firstName": "Moshe",
+    "lastName": "Skeat",
+    "email": "mskeat1@ezinearticles.com",
+    "password": "$2a$04$K2y5PZbJJV2xnGhfPuEyMuJK8cqlJz046/CqayOePUwygF0RthwEC",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER"
+    ],
+    "dateCreated": "2023-05-24",
+    "dateUpdated": null
+  },
+  {
+    "id": "657477ebfc13ae017ffa224b",
+    "firstName": "Joelly",
+    "lastName": "Faltin",
+    "email": "jfaltin2@boston.com",
+    "password": "$2a$04$5D3UM2qw5H00Mc9QRQGwgevmNPJ3GxlLBBlQrKz0eNM1i/7xskikK",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER"
+    ],
+    "dateCreated": "2023-04-20",
+    "dateUpdated": null
+  },
+  {
+    "id": "657477ebfc13ae017ffa224c",
+    "firstName": "Maureene",
+    "lastName": "Biggs",
+    "email": "mbiggs3@umich.edu",
+    "password": "$2a$12$zTscG41J1b8PFMXb1wTytuinmWqO8U2iXh1PCutOK6Ul0CBRRsP9u",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER"
+    ],
+    "dateCreated": "2023-05-20",
+    "dateUpdated": null
+  },
+  {
+    "id": "657477ebfc13ae017ffa224d",
+    "firstName": "Gaye",
+    "lastName": "Hrachovec",
+    "email": "ghrachovec4@newyorker.com",
+    "password": "$2a$12$NGd6cadYMnJnFklkkaqByeGrYc3IZ9p3EQkhF2cCliHAU0S6M8eY6",
+    "sellerInfo": "6574c128fc13ae45c8fa21e5",
+    "userRoles": [
+      "USER",
+      "SELLER"
+    ],
+    "dateCreated": "2023-05-19",
+    "dateUpdated": null
+  },
+  {
+    "id": "657477ebfc13ae017ffa224e",
+    "firstName": "Pierce",
+    "lastName": "Boys",
+    "email": "pboys5@t-online.de",
+    "password": "$2a$12$Pl1kxIPxElFrCgT62CO5xuxrdh0jMwF.Fj6orkS96bEtKr/neiWeS",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER",
+      "ADMIN"
+    ],
+    "dateCreated": "2023-09-09",
+    "dateUpdated": null
+  },
+  {
+    "id": "657477ebfc13ae017ffa224f",
+    "firstName": "Rafe",
+    "lastName": "Mutter",
+    "email": "rmutter6@tmall.com",
+    "password": "$2a$12$oSwnn6WpEFtL2kEDrDQRr.xZRsEpzZTNBmb4a6r6zoVpwpU2W6Bpm",
+    "sellerInfo": null,
+    "userRoles": [
+      "USER",
+      "OWNER"
+    ],
+    "dateCreated": "2023-01-16",
+    "dateUpdated": null
+  }
+]
