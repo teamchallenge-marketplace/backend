@@ -1,0 +1,24 @@
+[
+  {
+    "id": "6574c128fc13ae45c8fa21e5",
+    "sellerName": "Meemm",
+    "about": "generate cross-platform web-readiness",
+    "contacts": [
+      {
+        "phoneNumber": "+380(68)-918-9153",
+        "officeCity": "Kyiv"
+      },
+      {
+        "phoneNumber": "+380(68)-918-9123",
+        "officeCity": "Lviv"
+      },
+      {
+        "phoneNumber": "+380(68)-958-9153",
+        "officeCity": "Poltava"
+      }
+    ],
+    "contactEmail": "givanchov0@a8.net",
+    "officeAddress": "Ukraine, Kharkiv, Sumska 126 st.",
+    "rating": 6.3
+  }
+]

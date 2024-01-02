@@ -9,3 +9,8 @@ spring:
       host: localhost
       port: 27017
       auto-index-creation: true
+
+mongock:
+  migration-scan-package:
+    - ua.com.marketplace.backend.config
+  runner-type: initializingbean
