@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.mongock.api.annotations.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import ua.com.marketplace.backend.model.Category;
 import ua.com.marketplace.backend.model.OfficeContacts;
 import ua.com.marketplace.backend.model.SellerInfo;
 import ua.com.marketplace.backend.model.User;
@@ -41,6 +42,7 @@ public class CollectionsInitializer {
     public void insertData() throws IOException {
         insertUsers();
         insertManufacturers();
+        insertProductCategories();
     }
 
     @RollbackExecution
@@ -66,7 +68,6 @@ public class CollectionsInitializer {
 
         mongoTemplate.insert(users, collections[0]);
     }
-
 
     private void insertManufacturers() throws IOException {
         JsonNode jsonNode = objectMapper.readValue(
@@ -101,5 +102,23 @@ public class CollectionsInitializer {
 
 
         mongoTemplate.insert(sellerInfoList, collections[5]);
+    }
+
+    private void insertProductCategories() throws IOException {
+        JsonNode jsonNode = objectMapper.readValue(
+                new File("src/main/resources/static/product-categories.json"),
+                JsonNode.class
+        );
+
+        List<Category> categories = StreamSupport.stream(jsonNode.spliterator(), true)
+                .map(categoryNode -> {
+                    try {
+                        return objectMapper.treeToValue(categoryNode, Category.class);
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException("Error with mapping JSON to Java object", e);
+                    }
+                }).toList();
+
+        mongoTemplate.insert(categories, collections[2]);
     }
 }
