@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      username:
+      password:
+      database: marketplace
+      authentication-database: admin
+      uri: mongodb://localhost:27017/marketplace
+      host: localhost
+      port: 27017
+      auto-index-creation: true
+
+mongock:
+  migration-scan-package:
+    - ua.com.marketplace.backend.config
+  runner-type: initializingbean

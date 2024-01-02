@@ -1,0 +1,293 @@
+[
+  {
+    "id": "65929c62fc13ae503cfa2177",
+    "categoryName": "PCs and Laptops",
+    "categoryImage": "https://i.ibb.co/b3ZqpPq/pcs-laptops.jpg",
+    "parent": null,
+    "ancestors": []
+  },
+
+  {
+    "id": "65929c62fc13ae503cfa2178",
+    "categoryName": "Smartphones, TV and Electronics",
+    "categoryImage": "https://i.ibb.co/4Ssq4p0/smartphones-tv-electronics.jpg",
+    "parent": null,
+    "ancestors": []
+  },
+  {
+    "id": "65929c62fc13ae503cfa2179",
+    "categoryName": "Tablets",
+    "categoryImage": "https://i.ibb.co/N9wThs7/tablets.jpg",
+    "parent": "Smartphones, TV and Electronics",
+    "ancestors": [
+      "Smartphones, TV and Electronics"
+    ]
+  },
+  {
+    "id": "65929c62fc13ae503cfa217a",
+    "categoryName": "Smartphones",
+    "categoryImage": "https://i.ibb.co/W2cx2m1/smartphones.jpg",
+    "parent": "Smartphones, TV and Electronics",
+    "ancestors": [
+      "Smartphones, TV and Electronics"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa219f",
+    "categoryName": "TV",
+    "categoryImage": "https://i.ibb.co/Bf7PqGz/tvs.jpg",
+    "parent": "Smartphones, TV and Electronics",
+    "ancestors": [
+      "Smartphones, TV and Electronics"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a0",
+    "categoryName": "Headphones",
+    "categoryImage": "",
+    "parent": "Smartphones, TV and Electronics",
+    "ancestors": [
+      "Smartphones, TV and Electronics"
+    ]
+  },
+
+  {
+    "id": "6592b0bffc13ae4fddfa21a1",
+    "categoryName": "Goods for gamers",
+    "categoryImage": "https://i.ibb.co/KsRSRFy/gaming-goods.jpg",
+    "parent": null,
+    "ancestors": []
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a2",
+    "categoryName": "Monitors",
+    "categoryImage": "https://i.ibb.co/QQbs23n/monitors.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a3",
+    "categoryName": "Peripherals",
+    "categoryImage": "https://i.ibb.co/vJ94wyL/peripherals.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a5",
+    "categoryName": "Mouse pads",
+    "categoryImage": "https://i.ibb.co/RhzW4fG/mouse-pads.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a6",
+    "categoryName": "Gaming chairs",
+    "categoryImage": "https://i.ibb.co/3yTkfCb/gaming-chairs.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a7",
+    "categoryName": "Gaming tables",
+    "categoryImage": "https://i.ibb.co/30b1Sc8/gaming-tables.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a8",
+    "categoryName": "VR",
+    "categoryImage": "https://i.ibb.co/kMZftkh/vr.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21a9",
+    "categoryName": "Gaming PCs",
+    "categoryImage": "https://i.ibb.co/k49VmDb/gaming-pcs.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "659321a5fc13ae1690fa2707",
+    "categoryName": "Gaming consoles",
+    "categoryImage": "https://i.ibb.co/s19NfX4/gaming-consoles.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "659321a5fc13ae1690fa2708",
+    "categoryName": "Gaming laptops",
+    "categoryImage": "https://i.ibb.co/5jQj6Hq/gaming-laptops.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+  {
+    "id": "659321a5fc13ae1690fa2709",
+    "categoryName": "PC components",
+    "categoryImage": "https://i.ibb.co/yNfV0gx/pc-components.jpg",
+    "parent": "Goods for gamers",
+    "ancestors": [
+      "Goods for gamers"
+    ]
+  },
+
+  {
+    "id": "6592b0bffc13ae4fddfa21aa",
+    "categoryName": "Household goods",
+    "categoryImage": "https://i.ibb.co/pJNKyb6/household-goods.jpg",
+    "parent": null,
+    "ancestors": []
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21ab",
+    "categoryName": "Household appliances",
+    "categoryImage": "https://i.ibb.co/9YvNJ4v/household-appliances.jpg",
+    "parent": "Household goods",
+    "ancestors": [
+      "Household goods"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21ac",
+    "categoryName": "Tools",
+    "categoryImage": "https://i.ibb.co/pzYy5gF/tools.jpg",
+    "parent": "Household goods",
+    "ancestors": [
+      "Household goods"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21ad",
+    "categoryName": "Plumbing",
+    "categoryImage": "https://i.ibb.co/hZT3Mr0/plumbing.jpg",
+    "parent": "Household goods",
+    "ancestors": [
+      "Household goods"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21ae",
+    "categoryName": "Crockery",
+    "categoryImage": "https://i.ibb.co/DY4Vdr5/crockery.jpg",
+    "parent": "Household goods",
+    "ancestors": [
+      "Household goods"
+    ]
+  },
+
+  {
+    "id": "6592b0bffc13ae4fddfa21af",
+    "categoryName": "Clothes and shoes",
+    "categoryImage": "https://i.ibb.co/ZYXrqsL/clothes-shoes.jpg",
+    "parent": null,
+    "ancestors": []
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b0",
+    "categoryName": "Shorts and pants",
+    "categoryImage": "https://i.ibb.co/0Qd8kSP/shorts-pants.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b1",
+    "categoryName": "T-Shirts and Shirts",
+    "categoryImage": "https://i.ibb.co/q5VBt7z/t-shirts-shirts.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b2",
+    "categoryName": "Dresses and skirts",
+    "categoryImage": "https://i.ibb.co/jzWPpCL/dresses-skirts.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b3",
+    "categoryName": "Sneakers",
+    "categoryImage": "https://i.ibb.co/M9JM9pZ/sneakers.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b4",
+    "categoryName": "Flip-flops",
+    "categoryImage": "https://i.ibb.co/k0qz1wp/flip-flops.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b7",
+    "categoryName": "Slippers",
+    "categoryImage": "https://i.ibb.co/dMzzpBd/slippers.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b5",
+    "categoryName": "Sandals",
+    "categoryImage": "https://i.ibb.co/KzLjWQq/sandals.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b6",
+    "categoryName": "Boots",
+    "categoryImage": "https://i.ibb.co/BVjgdZ9/boots.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b8",
+    "categoryName": "Underwear",
+    "categoryImage": "https://i.ibb.co/Lx65SL4/underwear.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  },
+  {
+    "id": "6592b0bffc13ae4fddfa21b9",
+    "categoryName": "Accessories",
+    "categoryImage": "https://i.ibb.co/2YQxhsF/accessories.jpg",
+    "parent": "Clothes and shoes",
+    "ancestors": [
+      "Clothes and shoes"
+    ]
+  }
+]
