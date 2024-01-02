@@ -1,5 +1,6 @@
 package ua.com.marketplace.backend.service;
 
+import org.springframework.data.domain.Page;
 import ua.com.marketplace.backend.model.Category;
 
 import java.util.List;
@@ -14,4 +15,6 @@ public interface CategoryService {
 	void deleteById(String id);
 
 	List<Category> getAll();
+
+	List<Category> getAllChildCategories(String parentId);
 }

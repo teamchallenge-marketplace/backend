@@ -11,6 +11,8 @@ import ua.com.marketplace.backend.dto.ApiResponse;
 import ua.com.marketplace.backend.service.CategoryService;
 import ua.com.marketplace.backend.util.ApiResponseProvider;
 
+import java.util.Map;
+
 
 @RestController
 @RequestMapping("/categories")
@@ -32,6 +34,18 @@ public class CategoryController {
     public ResponseEntity<ApiResponse> getCategory(@PathVariable String categoryId) {
 
         return responseProvider.getApiResponse(HttpStatus.OK, categoryService.readById(categoryId));
+    }
+
+    @GetMapping("/descendants/{parentId}")
+    public ResponseEntity<ApiResponse> getChildCategories(@PathVariable String parentId) {
+        Map<String, Object> childCategories = Map.of(
+                "parent",
+                categoryService.readById(parentId),
+                "descendants",
+                categoryService.getAllChildCategories(parentId)
+        );
+
+        return responseProvider.getApiResponse(HttpStatus.OK, childCategories);
     }
 
 }
